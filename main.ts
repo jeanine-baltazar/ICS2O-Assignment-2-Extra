@@ -162,7 +162,7 @@ scene.onOverlapTile(SpriteKind.Player, myTiles.tile0, function (sprite, location
     }
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Elf, function (sprite, otherSprite) {
-    Elf.say("Hello, Penguin!")
+    Elf2.say("Hello, Penguin!")
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSprite) {
     otherSprite.destroy()
@@ -179,7 +179,7 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
         Penguin.vy = -180
     }
 })
-let Elf: Sprite = null
+let Elf2: Sprite = null
 let Fish: Sprite = null
 let Penguin: Sprite = null
 info.setLife(20)
@@ -378,7 +378,7 @@ for (let value of tiles.getTilesByType(myTiles.tile2)) {
 . . . . . . . . . . . . . 
 . . . . . . . . . . . . . 
 . . . . . . . . . . . . . 
-`, img`
+`,img`
 . . . . . . . . . . . . . 
 . . . . . . 6 6 6 . . . . 
 . . 6 6 6 6 9 1 6 . . . . 
@@ -394,7 +394,7 @@ for (let value of tiles.getTilesByType(myTiles.tile2)) {
 . . . . . . . . . . . . . 
 . . . . . . . . . . . . . 
 . . . . . . . . . . . . . 
-`, img`
+`,img`
 . . . . . . . . . . . . . 
 . . . . . . . . . . . . . 
 . . . . . . 6 6 6 . . . . 
@@ -410,7 +410,7 @@ for (let value of tiles.getTilesByType(myTiles.tile2)) {
 . . . . . . . . . . . . . 
 . . . . . . . . . . . . . 
 . . . . . . . . . . . . . 
-`, img`
+`,img`
 . . . . . . . . . . . . . 
 . . . . . . . . . . . . . 
 . . . . . . . . . . . . . 
@@ -426,7 +426,7 @@ for (let value of tiles.getTilesByType(myTiles.tile2)) {
 . . . . . . . . . . . . . 
 . . . . . . . . . . . . . 
 . . . . . . . . . . . . . 
-`, img`
+`,img`
 . . . . . . . . . . . . . 
 . . . . . . . . . . . . . 
 . . . . . . 6 6 6 . . . . 
@@ -442,7 +442,7 @@ for (let value of tiles.getTilesByType(myTiles.tile2)) {
 . . . . . . . . . . . . . 
 . . . . . . . . . . . . . 
 . . . . . . . . . . . . . 
-`, img`
+`,img`
 . . . . . . . . . . . . . 
 . . . . . . 6 6 6 . . . . 
 . . 6 6 6 6 9 1 6 . . . . 
@@ -458,7 +458,7 @@ for (let value of tiles.getTilesByType(myTiles.tile2)) {
 . . . . . . . . . . . . . 
 . . . . . . . . . . . . . 
 . . . . . . . . . . . . . 
-`, img`
+`,img`
 . . . . . . 6 6 6 . . . . 
 . . 6 6 6 6 9 1 6 . . . . 
 . 6 1 9 9 9 6 9 6 . . 6 6 
@@ -480,8 +480,8 @@ for (let value of tiles.getTilesByType(myTiles.tile2)) {
     )
     tiles.placeOnRandomTile(Fish, myTiles.tile2)
 }
-for (let value of tiles.getTilesByType(myTiles.tile5)) {
-    Elf = sprites.create(img`
+for (let value2 of tiles.getTilesByType(myTiles.tile5)) {
+    Elf2 = sprites.create(img`
 . . . . . . f f f f . . . . . . 
 . . . . f f f 2 2 f f f . . . . 
 . . . f f f 2 2 2 2 f f f . . . 
@@ -499,7 +499,7 @@ for (let value of tiles.getTilesByType(myTiles.tile5)) {
 . . . . . f f f f f f . . . . . 
 . . . . . f f . . f f . . . . . 
 `, SpriteKind.Elf)
-    tiles.placeOnRandomTile(Elf, myTiles.tile5)
+    tiles.placeOnRandomTile(Elf2, myTiles.tile5)
 }
 for (let index = 0; index < 1; index++) {
     game.showLongText("Hello young penguin!", DialogLayout.Bottom)
